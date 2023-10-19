@@ -3,7 +3,7 @@ import TaskManager from './TaskManager'
 
 function TaskList(props) {
   return (
-    <div>
+    <div style={{}}>
       <div className="cardheader text-uppercase text-center font-weight-bold" >
         {props.status}
       </div>

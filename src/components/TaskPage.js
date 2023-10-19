@@ -48,7 +48,7 @@ function TaskPage(props) {
         });
     };
     return (
-        <div className="container my-5">
+        <div className="container my-5" style={{}}>
             <div className="jumbotron py-3">
                 <div className="row">
                     <div className="col-md-2">
@@ -64,7 +64,7 @@ function TaskPage(props) {
                 </div>
                 {cardForm && (
                     <form onSubmit={onCreateTask}>
-                        <div className="form-control">
+                        <div className="form-control" style={{background:"none", border:"black"}}>
                             <div className="mb-3">
                                 <input
                                     type="text"
@@ -81,14 +81,14 @@ function TaskPage(props) {
                                     rows="3"
                                 ></textarea>
                             </div>
-                            <button type="submit" className="btn btn-primary">
+                            <button type="submit" className="btn btn-dark">
                                 Submit
                             </button>
                         </div>
                     </form>
                 )}
             </div>
-            <div className="row d-flex justify-content-center  position-relative align-item-center" style={{ backgroundColor: "#e9ecef" }}>
+            <div className="row d-flex justify-content-center  position-relative align-item-center" >
                 {renderTaskList()}
             </div>
         </div>
